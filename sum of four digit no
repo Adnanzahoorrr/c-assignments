@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int num, first, last;
+
+    // Input the number
+    printf("Enter a 4-digit number: ");
+    scanf("%d", &num);
+
+    // Check if number is 4-digit
+    if (num < 1000 || num > 9999) {
+        printf("Invalid input! Please enter a 4-digit number.\n");
+        return 1;
+    }
+
+    // Get the last digit
+    last = num % 10;
+
+    // Get the first digit
+    first = num / 1000;
+
+    // Output the sum
+    printf("Sum of first and last digit = %d\n", first + last);
+
+    return 0;
+}
