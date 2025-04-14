@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    float cost_price, profit, selling_price, cost_per_item;
+
+    printf("Enter the total selling price: ");
+    scanf("%f", &selling_price);
+
+    printf("Enter the total profit: ");
+    scanf("%f", &profit);
+
+    cost_price = selling_price - profit;
+    cost_per_item = cost_price / 15;
+
+    printf("Cost of each item is %.2f\n", cost_per_item);
+
+    return 0;
+}
