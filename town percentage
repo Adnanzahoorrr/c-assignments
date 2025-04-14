@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+#define TOTAL_POP 80000
+
+int main() {
+    float men, women;
+    float ill_men, ill_women;
+
+    
+    men = TOTAL_POP * (52.0 / 100);
+    women = TOTAL_POP - men;
+
+    // Assuming 35% of men are illiterate
+    ill_men = men * (35.0 / 100);
+
+    // Assuming 13% of women are illiterate
+    ill_women = women * (13.0 / 100);
+
+    printf("Total illiterate men are: %.0f\n", ill_men);
+    printf("Total illiterate women are: %.0f\n", ill_women);
+
+    return 0;
+}
