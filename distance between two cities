@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    float km, meters, cm, mm, feet, inches;
+    printf("Enter distance between two cities (in kilometers): ");
+    scanf("%f", &km);
+    meters = km * 1000;
+    cm = km * 100000;
+    mm = km * 1000000;
+    feet = km * 3280.84;
+    inches = km * 39370.1;
+    printf("\nDistance in:\n");
+    printf("Meters: %.2f\n", meters);
+    printf("Centimeters: %.2f\n", cm);
+    printf("Millimeters: %.2f\n", mm);
+    printf("Feet: %.2f\n", feet);
+    printf("Inches: %.2f\n", inches);
+
+}
