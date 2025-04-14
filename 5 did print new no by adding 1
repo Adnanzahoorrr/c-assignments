@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int num, digit, newNum = 0, place = 1;
+
+    printf("Enter a 5-digit number: ");
+    scanf("%d", &num);
+
+    // Check if number is 5-digit
+    if (num < 10000 || num > 99999) {
+        printf("Invalid input! Please enter a 5-digit number.\n");
+        return 1;
+    }
+
+    while (num > 0) {
+        digit = num % 10;            // Get the last digit
+        digit = (digit + 1) % 10;    // Add 1 and wrap around if it's 10
+        newNum = digit * place + newNum;
+        place *= 10;
+        num /= 10;
+    }
+
+    printf("New number after adding 1 to each digit: %05d\n", newNum);
+
+    return 0;
+}
