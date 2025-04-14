@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+#define TOTAL_MARKS 500
+
+int main() {
+    float marks_obtained, percentage;
+    float maths, english, science, urdu, history;
+
+    printf("Enter the marks obtained in Maths, English, Science, Urdu & History: ");
+    scanf("%f %f %f %f %f", &maths, &english, &science, &urdu, &history);
+
+    marks_obtained = maths + english + science + urdu + history;
+    printf("Total Marks Obtained: %.2f\n", marks_obtained);
+
+    percentage = (marks_obtained / TOTAL_MARKS) * 100;
+    printf("Percentage: %.2f%%\n", percentage);
+
+    return 0;
+}
