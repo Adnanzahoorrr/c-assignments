@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+#define PI 3.14
+
+int main() {
+    float length, breadth, radius;
+    float area_rectangle, perimeter_rectangle;
+    float area_circle, circumference_circle;
+
+    printf("Enter length of rectangle: ");
+    scanf("%f", &length);
+
+    printf("Enter breadth of rectangle: ");
+    scanf("%f", &breadth);
+
+    printf("Enter radius of circle: ");
+    scanf("%f", &radius);
+
+    // Rectangle calculations
+    area_rectangle = length * breadth;
+    perimeter_rectangle = 2 * (length + breadth);
+
+    // Circle calculations
+    circumference_circle = 2 * PI * radius;
+    area_circle = PI * radius * radius;
+
+    printf("Area and Perimeter of Rectangle: %.2f cm², %.2f cm\n", area_rectangle, perimeter_rectangle);
+    printf("Area and Circumference of Circle: %.2f cm², %.2f cm\n", area_circle, circumference_circle);
+
+    return 0;
+}
