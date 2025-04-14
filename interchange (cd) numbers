@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int C, D, temp;
+
+    // Input values
+    printf("Enter value of C: ");
+    scanf("%d", &C);
+    printf("Enter value of D: ");
+    scanf("%d", &D);
+
+    // Swapping
+    temp = C;
+    C = D;
+    D = temp;
+
+    // Output the result
+    printf("After swapping:\n");
+    printf("C = %d\n", C);
+    printf("D = %d\n", D);
+
+    return 0;
+}
